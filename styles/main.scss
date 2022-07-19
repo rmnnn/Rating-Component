@@ -1,0 +1,120 @@
+//variables
+$orange: hsl(25, 97%, 53%);
+$light-grey:hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 99vh;
+    background-color: $very-dark-blue;
+}
+
+main{
+    width: 450px;
+    background-color: $dark-blue;
+    padding: 30px;
+    color: white;
+    border-radius: 25px;
+    .star{
+        background-color: hsl(212, 19%, 26%);
+        padding: 10px;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-bottom: 40px;
+    }
+    .content{
+        h1{
+            font-weight: 700;
+        }
+        p{
+            color: $medium-grey;
+            font-weight: 700;
+            margin: 15px 0;
+            line-height: 22px;
+        }
+    }
+    .rating-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0;
+        span{
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(212, 19%, 26%);
+            border-radius: 50%;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            color: $medium-grey;
+            &:hover{
+                transform: .2s ease;
+                background-color: $light-grey;
+                color: white;
+            }
+        }
+    }
+
+    button{
+        width: 100%;
+        background-color: $orange;
+        color: white;
+        padding: 15px;
+        letter-spacing: 4px;
+        border: none;
+        border-radius: 80px;
+        font-size: 18px;
+        cursor: pointer;
+        &:hover{
+            transition: .2s ease;
+            color: $orange;
+            background-color: white;
+        }
+    }
+}
+main.thank-you{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 50%;
+    }
+    #selected{
+        margin-top: 25px;
+        background-color: hsl(212, 19%, 26%);
+        color: $orange;
+        padding: 5px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+    h1{
+        margin-top: 35px;
+    }
+
+    .msg{
+        color:hsl(216, 12%, 54%);
+        text-align: center;
+        margin-top: 10px;
+    }
+}

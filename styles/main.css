@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 99vh;
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+main {
+  width: 450px;
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 30px;
+  color: white;
+  border-radius: 25px;
+}
+main .star {
+  background-color: hsl(212deg, 19%, 26%);
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+main .content h1 {
+  font-weight: 700;
+}
+main .content p {
+  color: hsl(216deg, 12%, 54%);
+  font-weight: 700;
+  margin: 15px 0;
+  line-height: 22px;
+}
+main .rating-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+main .rating-wrapper span {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212deg, 19%, 26%);
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  color: hsl(216deg, 12%, 54%);
+}
+main .rating-wrapper span:hover {
+  transform: 0.2s ease;
+  background-color: hsl(217deg, 12%, 63%);
+  color: white;
+}
+main button {
+  width: 100%;
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+  padding: 15px;
+  letter-spacing: 4px;
+  border: none;
+  border-radius: 80px;
+  font-size: 18px;
+  cursor: pointer;
+}
+main button:hover {
+  transition: 0.2s ease;
+  color: hsl(25deg, 97%, 53%);
+  background-color: white;
+}
+
+main.thank-you {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+main.thank-you img {
+  width: 50%;
+}
+main.thank-you #selected {
+  margin-top: 25px;
+  background-color: hsl(212deg, 19%, 26%);
+  color: hsl(25deg, 97%, 53%);
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+main.thank-you h1 {
+  margin-top: 35px;
+}
+main.thank-you .msg {
+  color: hsl(216deg, 12%, 54%);
+  text-align: center;
+  margin-top: 10px;
+}/*# sourceMappingURL=main.css.map */
